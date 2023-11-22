@@ -10,5 +10,6 @@ public class olamundo {
         System.out.println("CFB curso de Java.");
         System.out.printf("Canal:%s - Ano:%d", "CFB Cursos",22112023);
         System.out.printf("Valor da variavel num:%d%nNome:%s", num, nome);
+        
     }
 }
