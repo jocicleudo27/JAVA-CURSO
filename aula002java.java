@@ -5,6 +5,9 @@ public class aula002java{
         int faltas = 10;
         int maxFaltas = 5;
         int media = 60;
+        //String res;
+        //res = (nota >= media ? "Aprovado" : "Reporovado");
+        //System.out.println("Resultado: " + res); operação ternaria.
 
         if(nota >= media && faltas <= maxFaltas){
             System.out.println("Aprovado");
