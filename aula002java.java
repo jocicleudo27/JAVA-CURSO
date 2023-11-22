@@ -1,20 +1,20 @@
 public class aula002java{
     public static void main(String[]args){
+        int nota = 85; //teste
+        int faltas = 2;
+        int maxFaltas = 5;
+        int media = 60;
+        //String res;
+        //res = (nota >= media ? "Aprovado" : "Reporovado");
+        //System.out.println("Resultado: " + res); operação ternaria.
 
-        int pos = 1;
-
-        switch (pos) {
-            case 1:
-                System.out.println("Primeiro Lugar");
-                break;
-            case 2:
-                System.out.println("Segundo Lugar");
-                break;
-            case 3:
-                System.out.println("Terceiro Lugar");
-                break;
-            default:
-                System.out.println("Nao subiu no podio");
-                break;
+        if(nota >= media && faltas <= maxFaltas){
+            System.out.println("Aprovado");
+        }else if(nota >= 40){
+            System.out.println("Recuperacao");
+        }else{
+        System.out.println("Reprovado");
         }
+        System.out.println("FIm do programa");
+    }
 }
