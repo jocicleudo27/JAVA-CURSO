@@ -1,5 +1,5 @@
 public class aula003{
-    public static void main(string[]args){
+    public static void main(String[]args){
         int pos = 1;
 
         switch(pos){
