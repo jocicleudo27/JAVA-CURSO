@@ -1,7 +1,7 @@
 public class aula002java{
     public static void main(String[]args){
 
-        int pod = 1;
+        int pos = 1;
 
         switch (pos) {
             case 1:
