@@ -2,6 +2,9 @@ import java.util.Scanner;
 
     public class aula005 {
         public static void main(String[] args){
+        
+        Scanner  scan = new Scanner(System.in);
+        
         //aula sobre loop
         //FOR
         /*
@@ -10,8 +13,9 @@ import java.util.Scanner;
             }
             */
             //WILIE
+        int max = scan.nextInt();
         int cont =0;
-        while (cont < 5) {
+        while (cont < max) {
             System.out.println(cont +" - CFB Cursos");
             cont++;
         } 
