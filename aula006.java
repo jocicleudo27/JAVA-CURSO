@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class aula006{
     
     public static void main(String[] args){
@@ -34,7 +36,9 @@ public class aula006{
         }
         */
         //for sepecial para ler elementos de um array.
-        int[] num = {10,20,30,40,50};
+        int[] num = {19,2,7,1,8,5,3,4,0,6};
+
+        Arrays.sort(num);
 
         for(int n:num){
             System.err.printf("%d -", n);
