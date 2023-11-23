@@ -18,6 +18,7 @@ public class aula006{
             System.out.printf("%d ", neme[i]);
         }
     */
+        /*
         final int tam = 5;
         char[] gabarito = {'a','a','d','b','c'};
         char[] respostas = new char[tam];
@@ -31,6 +32,14 @@ public class aula006{
                 nota++;
             }
         }
-        System.out.printf("Nota do aluno:%d", nota);
+        */
+        //for sepecial para ler elementos de um array.
+        int[] num = {10,20,30,40,50};
+
+        for(int n:num){
+            System.err.printf("%d -", n);
+        }
+
+        //System.out.printf("Nota do aluno:%d", nota);
     }
 }
