@@ -14,7 +14,7 @@ import java.util.Scanner;
         while (cont < 5) {
             System.out.println(cont +" - CFB Cursos");
             cont++;
-        }
+        } 
         System.out.println("Fim do programa");
     }   
     
