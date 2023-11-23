@@ -8,7 +8,7 @@ public class aula004{
         int n1 = 0, n2 = 0, res = 0;
         // ler entrada de dados.
 
-        System.out.printl("Digite um numero: ");
+        System.out.println("Digite um numero: ");
         n1 = scan.nextInt();
         System.out.printl("Digite outro numero: ");
         n2 = scan.nextInt();
