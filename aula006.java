@@ -11,7 +11,9 @@ public class aula006{
         num[3] = 0;
         num[4] =8;
 
-        System.out.printf("%d\n", num[2]);
-        System.out.printf("%d", neme[1]);
+        for(int i = 0; i < 5; i++){
+            //System.out.printf("%d\n ", num[i]);
+            System.out.printf("%d ", neme[i]);
+        }
     }
 }
