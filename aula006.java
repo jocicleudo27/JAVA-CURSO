@@ -2,7 +2,9 @@ public class aula006{
     
     public static void main(String[] args){
 
-        int[] num = new int[5];
+        final int tam = 5;
+
+        int[] num = new int[tam];
         int[] neme = {10,20,30,40,50};
 
         num[0] = 10;
