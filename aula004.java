@@ -10,7 +10,7 @@ public class aula004{
 
         System.out.println("Digite um numero: ");
         n1 = scan.nextInt();
-        System.out.printl("Digite outro numero: ");
+        System.out.println("Digite outro numero: ");
         n2 = scan.nextInt();
         res = n1 + n2;
         System.out.printf("Soma de %d com %d e igual a %d", n1, n2, res);
