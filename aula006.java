@@ -36,9 +36,12 @@ public class aula006{
         }
         */
         //for sepecial para ler elementos de um array.
-        int[] num = {19,2,7,1,8,5,3,4,0,6};
+        final int tam = 10;
+        int[] num = {9,2,7,1,8,5,3,4,0,6};
+        int[] nume = new int[tam];
+        System.arraycopy(num, 0, nume, 0, tam);
 
-        Arrays.sort(num);
+        //Arrays.sort(num);
 
         for(int n:num){
             System.err.printf("%d -", n);
