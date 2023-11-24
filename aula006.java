@@ -40,12 +40,13 @@ public class aula006{
         int[] num = {9,2,7,1,8,5,3,4,0,6};
         int[] nume = new int[tam];
         System.arraycopy(num, 0, nume, 0, tam);
-
         //Arrays.sort(num);
 
-        for(int n:num){
-            System.err.printf("%d -", n);
-        }
+        System.out.printf("Arrays sao iguais:%d",Arrays.equals(num, nume) ? "Sim" : "Nao");
+
+       // for(int n:num){
+         //   System.err.printf("%d -", n);
+        //}
 
         //System.out.printf("Nota do aluno:%d", nota);
     }
