@@ -43,7 +43,7 @@ public class aula006{
         //System.arraycopy(num, 0, nume, 0, tam);
         //Arrays.sort(num);
         //System.out.printf("Arrays sao iguais:%d",Arrays.equals(num, nume) ? "Sim" : "Nao");
-        System.out.printf("O elemento %d esta no array? %s",p,Arrays.equals(num, nume) ? "Sim" : "Nao");
+        System.out.printf("O elemento %d esta no array? %s",p,Arrays.binarySearch(num,p) > 0 ? "Sim" : "Nao");
 
        // for(int n:num){
          //   System.err.printf("%d -", n);
