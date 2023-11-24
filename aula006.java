@@ -39,10 +39,11 @@ public class aula006{
         final int tam = 10;
         int[] num = {9,2,7,1,8,5,3,4,0,6};
         int[] nume = new int[tam];
-        System.arraycopy(num, 0, nume, 0, tam);
+        int p = 3;
+        //System.arraycopy(num, 0, nume, 0, tam);
         //Arrays.sort(num);
-
-        System.out.printf("Arrays sao iguais:%d",Arrays.equals(num, nume) ? "Sim" : "Nao");
+        //System.out.printf("Arrays sao iguais:%d",Arrays.equals(num, nume) ? "Sim" : "Nao");
+        System.out.printf("O elemento %d esta no array? %s",p,Arrays.equals(num, nume) ? "Sim" : "Nao");
 
        // for(int n:num){
          //   System.err.printf("%d -", n);
