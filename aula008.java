@@ -11,5 +11,12 @@ public class aula008 {
                 numeros[l][c] = new SecureRandom().nextInt(100);
             }
         }
+
+        for(int l =0; l < linhas; l++){
+            for(int c = 0; c < collunas; c++){
+                System.out.printf("%d | ",numeros[l][c]);
+            }
+            System.out.printf("%n");
+        }
     }
 }
