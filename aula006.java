@@ -39,14 +39,14 @@ public class aula006{
         final int tam = 10;
         int[] num = {9,2,7,1,8,5,3,4,0,6};
         int[] nume = new int[tam];
-        int p = 3;
+        int p = 5;
         int pos;
         //System.arraycopy(num, 0, nume, 0, tam);
         Arrays.sort(num);
         //System.out.printf("Arrays sao iguais:%d",Arrays.equals(num, nume) ? "Sim" : "Nao");
         //System.out.printf("O elemento %d esta no array? %s",p,Arrays.binarySearch(num,p) > 0 ? "Sim" : "Nao");
         pos =Arrays.binarySearch(num,p);
-        System.out.printf("O elemento %d esta no array? %s",p,pos > 0 ? "Sim" : "Nao");
+        System.out.printf("O elemento %d esta no array? %s na posicao %d",p,pos > 0 ? "Sim" : "Nao",p);
        
         // for(int n:num){
          //   System.err.printf("%d -", n);
