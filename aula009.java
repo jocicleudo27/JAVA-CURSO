@@ -5,12 +5,20 @@ public class aula009{
         
         msg("Aprendendo Java.", 5);
         System.out.println(soma2(10, 20));
-        System.out.println(soma(1,5,10,3,20,2));
+        System.out.println(soma(2,5));
+        System.out.println(soma(2.5, 2.7));
     }
 
     public static int soma(int... numeros){
         int res = 0;
         for(int n:numeros){
+            res+=n;
+        }
+        return res;
+    }
+    public static Double soma(Double...numeros){
+        Double res = 0.0;
+        for(Double n:numeros){
             res+=n;
         }
         return res;
