@@ -1,4 +1,4 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 
     public class aula005 {
         public static void main(String[] args){
