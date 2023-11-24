@@ -38,7 +38,6 @@ public class aula006{
         //for sepecial para ler elementos de um array.
         final int tam = 10;
         int[] num = {9,2,7,1,8,5,3,4,0,6};
-        int[] nume = new int[tam];
         int p = 5;
         int pos;
         //System.arraycopy(num, 0, nume, 0, tam);
