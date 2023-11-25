@@ -30,11 +30,17 @@ public class aula10{
 
     class Jogador{
         
+        private final int maxVidas = 3;
         private int num = 0;
+        private int vidas = 0;
 
         public Jogador(int num){
-        this.num = num;
-        System.out.printf("%nJogador numero %d criado%n ", num);        
-        }   
+            this.num = num;
+            this.vidas = 3;
+            System.out.printf("Jogador nume %d criado%n",num);
+        }
+        public int getVidas(){
+            return this.vidas;
+        }
     }
     
