@@ -1,15 +1,21 @@
 public class aula10{
     public static void main(String[] args){
         //Ex: de criação de objeto.
-            Jogador j1 = new Jogador();
-            Jogador j2 = new Jogador();
-            Jogador j3 = new Jogador();
+            Jogador j1 = new Jogador(1);
+            Jogador j2 = new Jogador(2);
+            
+            j1.num =10;
+            j2.num = 12;
+            System.out.printf("%n%d",j1.num);
+            System.out.printf("%n%d",j2.num);
     }
 }
 
     class Jogador{
-        public Jogador(){
-        System.out.printf("%nJogador criado%n ");        
+        public int num = 0;
+
+        public Jogador(int n){
+        System.out.printf("Jogador numero %d criado%n ", n);        
     }
     }
     
