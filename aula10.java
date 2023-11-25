@@ -1,9 +1,12 @@
 public class aula10{
     public static void main(String[] args){
         //Ex: de criação de objeto.
-            Jogador j1 = new Jogador(1);
-            Jogador j2 = new Jogador(2);
-            
+            //teste e veja as alterações
+            int num = 0;
+
+            Jogador j1 = new Jogador(num++);
+            Jogador j2 = new Jogador(num++);
+            Jogador j3 = new Jogador(num++);
             //j1.num = 10;
             //j2.num = 12;
             //System.out.printf("%n%d",j1.num);
@@ -17,7 +20,7 @@ public class aula10{
 
         public Jogador(int num){
         this.num = num;
-        System.out.printf("Jogador numero %d criado%n ", num);        
+        System.out.printf("%nJogador numero %d criado%n ", num);        
         }   
     }
     
