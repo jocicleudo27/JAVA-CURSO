@@ -7,6 +7,11 @@ public class aula10{
             Jogador j1 = new Jogador(++num);
             Jogador j2 = new Jogador(++num);
             Jogador j3 = new Jogador(++num);
+            
+            j1.setVidas(100);
+            System.out.printf("%nVidas do jogador 1:%d", j1.getVidas());
+            System.out.printf("%nVidas do jogador 2:%d", j2.getVidas());
+            System.out.printf("%nVidas do jogador 3:%d", j3.getVidas());
             /*
                 esta é a saida do pós decremento.
                 Jogador numero 0 criado
@@ -36,15 +41,26 @@ public class aula10{
 
         public Jogador(int num){
             this.num = num;
-            this.vidas = 3;
+            this.vidas = 1;
             System.out.printf("Jogador nume %d criado%n",num);
         }
         public int getVidas(){
             return this.vidas;
         }
+        public void addVidas(){
+            if (this.vidas < maxVidas) {
+                this.vidas++;
+            }
+        }
         public void setVidas(int vidas){
-            if(vidas > 3)
-            this.vidas = vidas;
+            if(vidas > maxVidas){
+                this.vidas = maxVidas;
+            }else if (vidas < 0) {
+                this.vidas = 0;
+            }else{
+                this.vidas = vidas;
+            }
+            
         }
     }
     
