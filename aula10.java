@@ -42,5 +42,9 @@ public class aula10{
         public int getVidas(){
             return this.vidas;
         }
+        public void setVidas(int vidas){
+            if(vidas > 3)
+            this.vidas = vidas;
+        }
     }
     
