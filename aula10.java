@@ -50,7 +50,7 @@ public class aula10{
             return this.vidas;
         }
         public void addVidas(){
-            if (this.vidas < maxVidas) {
+            if (this.vidas < maxVidas) {//controla o limite de vidas
                 this.vidas++;
             }
         }
