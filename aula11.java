@@ -21,6 +21,9 @@ public class aula11 {
             public Boolean getligado(){
                 return this.ligado;
             }
+            public void setLigado(Boolean ligado){
+                this.ligado = ligado;
+            }
         }
     }
 }
