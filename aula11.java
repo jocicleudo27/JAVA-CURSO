@@ -11,7 +11,12 @@ public class aula11 {
                 this.nome = nome;
                 this.ligado = false;
                 this.destruido = false;
+                this.blindagem = 0;
+                this.armamento = false;
 
+            }
+            public String getNome(){
+                return this.nome;
             }
         }
     }
