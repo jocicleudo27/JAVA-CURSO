@@ -9,7 +9,9 @@ public class aula11 {
 
             public Carro(string nome){
                 this.nome = nome;
-                
+                this.ligado = false;
+                this.destruido = false;
+
             }
         }
     }
