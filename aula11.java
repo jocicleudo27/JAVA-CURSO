@@ -41,7 +41,14 @@ public class aula11 {
                     this.destruido  true;
                 }
             }
-            
+            public void info(){
+                System.out.println("-------------------------------");
+                System.out.printf("Nome........:%s%n",this.nome);
+                System.out.printf("Ligado......:%s%n",this.ligado ? "Sim" : "Nao");
+                System.out.printf("Destruiso...:%s%n",this.destruido ? "Sim" : "Nao");
+                System.out.printf("Blindagem...:%d%n",this.blindagem);
+                System.out.printf("Armameno...%s%n",this.armamento ? "Sim" : "Nao");
+            }
         }   
     }
 }
