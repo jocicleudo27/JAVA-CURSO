@@ -4,6 +4,10 @@ public class aula10{
             //teste e veja as alterações
             int num = 0;
 
+            Jogador.pontos();
+            Jogador.pontos();
+            Jogador.pontos();
+
             System.out.printf("%nAlerta:%s%n",Jogador.alerta ? "sim" : "nao ");
 
             Jogador j1 = new Jogador(++num);
