@@ -24,6 +24,9 @@ public class aula11 {
             public void setLigado(Boolean ligado){
                 this.ligado = ligado;
             }
+            public Boolean getDestruido(){
+                return this.destruido;
+            }
         }
     }
 }
