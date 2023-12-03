@@ -27,6 +27,9 @@ public class aula11 {
             public Boolean getDestruido(){
                 return this.destruido;
             }
-        }
+            public Boolean getArmamento(){
+                return this.armamento;
+            }
+        }   
     }
 }
