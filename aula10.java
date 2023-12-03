@@ -10,6 +10,12 @@ public class aula10{
             Jogador j2 = new Jogador(++num);
             Jogador j3 = new Jogador(++num);
             
+            Jogador.alerta = true;
+
+            j1.info();
+            j2.info();
+            j3.info();
+
             //j1.setVidas(100);
             //j1.addVidas();
             //j3.addVidas();
@@ -49,6 +55,7 @@ public class aula10{
             this.num = num;
             this.vidas = 1;
             System.out.printf("Jogador nume %d criado%n",num);
+            qtdJogadores++;
         }
         public int getVidas(){
             return this.vidas;
@@ -58,6 +65,15 @@ public class aula10{
                 this.vidas++;
             }
         }
+
+        public void info(){
+            System.out.printf("%nJogador:%d",this.num);
+            System.out.printf("%nVidas:%d",this.vidas);
+            System.out.printf("%nAlerta:%s",alerta ? "Sim" : "Nao");
+            System.out.printf("%nJogadores:%d",qtdJogadores);
+            System.out.printf("%n------------------------------%n");
+        }
+
         public void setVidas(int vidas){
             if(vidas > maxVidas){
                 this.vidas = maxVidas;
