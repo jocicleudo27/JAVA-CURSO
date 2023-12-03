@@ -50,6 +50,7 @@ public class aula10{
         private int vidas = 0;
         static boolean alerta =  false;
         static int qtdJogadores = 0;
+        static int pontosJogadores = 0;
 
         public Jogador(int num){
             this.num = num;
@@ -66,11 +67,16 @@ public class aula10{
             }
         }
 
+        static void pontos(){
+            pontosJogadores +=10;
+        }
+
         public void info(){
             System.out.printf("%nJogador:%d",this.num);
             System.out.printf("%nVidas:%d",this.vidas);
             System.out.printf("%nAlerta:%s",alerta ? "Sim" : "Nao");
             System.out.printf("%nJogadores:%d",qtdJogadores);
+            System.out.printf("%nPontos Jogadores:%d",pontosJogadores);
             System.out.printf("%n------------------------------%n");
         }
 
