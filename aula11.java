@@ -30,6 +30,18 @@ public class aula11 {
             public Boolean getArmamento(){
                 return this.armamento;
             }
+            public int getBlindagem(){
+                return this.blindagem;
+            }
+            public void sofrerDano(int dano){
+                this.blindagem-=dano;
+                if(this.blindagem <= 0){
+                    this.blindagem = 0;
+                    this.ligado = false;
+                    this.destruido  true;
+                }
+            }
+            
         }   
     }
 }
