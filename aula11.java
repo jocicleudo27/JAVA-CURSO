@@ -6,6 +6,11 @@ public class aula11 {
             private Boolean destruido;
             private int blindagem;
             private Boolean armamento;
+
+            public Carro(string nome){
+                this.nome = nome;
+                
+            }
         }
     }
 }
