@@ -3,6 +3,7 @@ public class aula11 {
         
         Carro c1 = new Carro("Golf");
 
+        c1.setLigado(true);
         c1.info();
     }
 }
