@@ -1,5 +1,12 @@
 public class aula11 {
     public static void main(String[]args){
+        
+        Carro c1 = new Carro("Golf");
+
+        c1.info();
+    }
+}
+
         class Carro{
             private String nome;
             private Boolean ligado;
@@ -7,7 +14,7 @@ public class aula11 {
             private int blindagem;
             private Boolean armamento;
 
-            public Carro(string nome){
+            public Carro(String nome){
                 this.nome = nome;
                 this.ligado = false;
                 this.destruido = false;
@@ -38,17 +45,15 @@ public class aula11 {
                 if(this.blindagem <= 0){
                     this.blindagem = 0;
                     this.ligado = false;
-                    this.destruido  true;
+                    this.destruido = true;
                 }
             }
             public void info(){
                 System.out.println("-------------------------------");
                 System.out.printf("Nome........:%s%n",this.nome);
                 System.out.printf("Ligado......:%s%n",this.ligado ? "Sim" : "Nao");
-                System.out.printf("Destruiso...:%s%n",this.destruido ? "Sim" : "Nao");
+                System.out.printf("Destruido...:%s%n",this.destruido ? "Sim" : "Nao");
                 System.out.printf("Blindagem...:%d%n",this.blindagem);
                 System.out.printf("Armameno...%s%n",this.armamento ? "Sim" : "Nao");
             }
         }   
-    }
-}
