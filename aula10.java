@@ -4,16 +4,18 @@ public class aula10{
             //teste e veja as alterações
             int num = 0;
 
+            System.out.printf("%nAlerta:%s%n",Jogador.alerta ? "sim" : "nao ");
+
             Jogador j1 = new Jogador(++num);
             Jogador j2 = new Jogador(++num);
             Jogador j3 = new Jogador(++num);
             
             //j1.setVidas(100);
-            j1.addVidas();
-            j3.addVidas();
-            System.out.printf("%nVidas do jogador 1:%d", j1.getVidas());
-            System.out.printf("%nVidas do jogador 2:%d", j2.getVidas());
-            System.out.printf("%nVidas do jogador 3:%d", j3.getVidas());
+            //j1.addVidas();
+            //j3.addVidas();
+            //System.out.printf("%nVidas do jogador 1:%d", j1.getVidas());
+            //System.out.printf("%nVidas do jogador 2:%d", j2.getVidas());
+            //System.out.printf("%nVidas do jogador 3:%d", j3.getVidas());
             /*
                 esta é a saida do pós decremento.
                 Jogador numero 0 criado
@@ -40,6 +42,8 @@ public class aula10{
         private final int maxVidas = 3;
         private int num = 0;
         private int vidas = 0;
+        static boolean alerta =  false;
+        static int qtdJogadores = 0;
 
         public Jogador(int num){
             this.num = num;
