@@ -18,6 +18,9 @@ public class aula11 {
             public String getNome(){
                 return this.nome;
             }
+            public Boolean getligado(){
+                return this.ligado;
+            }
         }
     }
 }
