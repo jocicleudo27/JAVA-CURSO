@@ -80,5 +80,9 @@ public class aula12{
         if(current_heap_size <= 0){
             return Integer.MAX_VALUE;
         }
+        if(current_heap_size == 1){
+            current_heap_size--;
+            return heapArray[0];
+        }
     }
 }
