@@ -116,8 +116,20 @@ public class aula12{
         MinHeapify(smallest);
     }
 }
-//Aumenta o valor de determinada chave para new_val.
-public void increaseKey(int key, int new_val) {
+    //Aumenta o valor de determinada chave para new_val.
+    public void increaseKey(int key, int new_val) {
         heapArray[key] = new_val;
         MinHeapify(key);
     }
+    //Altera o valor em uma chave
+     public void changeValueOnAKey(int key, int new_val) {
+        if (heapArray[key] == new_val) {
+            return;
+        }
+        if (heapArray[key] < new_val) {
+            increaseKey(key, new_val);
+        } else {
+            decreaseKey(key, new_val);
+        }
+    }
+}
