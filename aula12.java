@@ -51,5 +51,11 @@ public class aula12{
             heapArray[i] = key;
             current_heap_size++;
         }
+        //Corrigir a propriedade min heap se ela for violada
+        while(i != 0 && heapArray[i] < heapArray[parent(i)]){
+            swap(heapArray, i, parent(i));
+            i = parent(i);
+        }
+        return true;
     }
 }
