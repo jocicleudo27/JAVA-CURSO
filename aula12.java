@@ -99,4 +99,25 @@ public class aula12{
         decreasekey(key, Integer.MIN_VALUE);
         extractMin();
     }
+    //Um método recursivo para heapify uma subárvore
+    private void MinHeapify(int key){
+        int l = left(key);
+        int r = right(key);
+
+        int smallest = key;
+        if(l < current_heap_size && heapArray[l] < heapArray[smallest]){
+            smallest = 1;
+        }
+        if (r < current_heap_size && heapArray[r] < heapArray[smallest]) {
+            smallest = r;
+    }
+    if(smallest != key){
+        swap(heapArray, key, smallest);
+        MinHeapify(smallest);
+    }
 }
+//Aumenta o valor de determinada chave para new_val.
+public void increaseKey(int key, int new_val) {
+        heapArray[key] = new_val;
+        MinHeapify(key);
+    }
