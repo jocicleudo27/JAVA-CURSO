@@ -28,5 +28,13 @@ public class aula12{
             arr[a] = arr[b];
             arr[b] = temp;
         }
+        //Obter o índice pai para o índice fornecido
+        private int parent(int key){
+            return(key -1) / 2;
+        }
+        //
+        private intleft(int key){
+            return 2 * key + 1;
+        }
     }
 }
