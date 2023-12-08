@@ -22,5 +22,11 @@ public class aula12{
             heapArray = new int[capacity];
             current_heap_size = 0;
         }
+        //Troando usando referência
+        private void swap(int[] arr, int a, int b){
+            int temp = arr[a];
+            arr[a] = arr[b];
+            arr[b] = temp;
+        }
     }
 }
