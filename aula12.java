@@ -32,9 +32,13 @@ public class aula12{
         private int parent(int key){
             return(key -1) / 2;
         }
-        //
+        //Obter o índice Filho Esquerdo para o índice fornecido
         private intleft(int key){
             return 2 * key + 1;
+        }
+        //Obter o índice Filho Direito para o índice fornecido
+        private int right(int key){
+            return 2 * key + 2;
         }
     }
 }
