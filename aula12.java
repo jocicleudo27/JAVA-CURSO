@@ -69,4 +69,10 @@ public class aula12{
             key = parent(key);
         }
     }
+    //Retorna a chave mínima (chave em
+    //root) da pilha mínima 
+    
+    public int getMin(){
+        return heapArray[0];
+    }
 }
