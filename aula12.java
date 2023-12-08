@@ -75,4 +75,10 @@ public class aula12{
     public int getMin(){
         return heapArray[0];
     }
+    //Método para remover elemento mínimo da raiz
+    public int extractMin(){
+        if(current_heap_size <= 0){
+            return Integer.MAX_VALUE;
+        }
+    }
 }
