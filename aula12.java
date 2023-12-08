@@ -40,5 +40,16 @@ public class aula12{
         private int right(int key){
             return 2 * key + 2;
         }
+        // inserindo novo indice
+        public Boolean insertKey(int key) {
+            if(current_heap_size == capacity){
+                //heap is full
+                return false;
+            }
+            //Primeiro insira a nova chave no final
+            int i = current_heap_size;
+            heapArray[i] = key;
+            current_heap_size++;
+        }
     }
 }
