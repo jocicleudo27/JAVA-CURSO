@@ -15,5 +15,12 @@ public class aula12{
 
         //Número atual de elementos no heap
         private int current_heap_size;
+
+        //construtor
+        public MinHeap(int n){
+            capacity = n;
+            heapArray = new int[capacity];
+            current_heap_size = 0;
+        }
     }
 }
