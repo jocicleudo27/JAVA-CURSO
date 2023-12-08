@@ -58,4 +58,15 @@ public class aula12{
         }
         return true;
     }
+    //Diminui o valor de determinada chave para new_val. 
+    //Supõe-se que new_val é menor 
+    //do que heapArray[key]. 
+    public void decreasekey(int key, int new_val){
+        heapArray[key] = new_val;
+
+        while(key != 0 && heapArray[key]) < heapArray[parent(key)]{
+            swap(heapArray, key, parent(key));
+            key = parent(key);
+        }
+    }
 }
