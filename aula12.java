@@ -84,5 +84,19 @@ public class aula12{
             current_heap_size--;
             return heapArray[0];
         }
+       // Armazene o valor mínimo, 
+       // e removê-lo da pilha 
+       int root = heapArray = heapArray[current_heap_size -1];
+       current_heap_size--;
+       MinHeap(0);
+
+       return root;
+    }
+    // Esta função exclui a chave no índice fornecido
+    //Primeiro reduziu o valor 
+    //para menos infinito, então chama extractMin()
+    public void deletekey(int key){
+        decreasekey(key, Integer.MIN_VALUE);
+        extractMin();
     }
 }
