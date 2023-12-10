@@ -27,8 +27,8 @@ public class aula14{
         //algoritmo de caminho mais curto para um grafo representado usando representação matricial de adjacência.
         void Dijkstra(int graph[][], int src){// Esta é a representação matricial de adjacência do gráfico.
             //int src: Este é o vértice de origem a partir do qual o algoritmo de Dijkstra é executado.
-            int dist[] = new int[V];
-            Boolean sptSet[] = new Boolean[V];
+            int dist[] = new int[V];//cria  um novo array de inteiros chamado dist com tamanho V.
+            Boolean sptSet[] = new Boolean[V];//cria um novo array de booleanos chamado sptSet com tamanho V
         }
     }
 
