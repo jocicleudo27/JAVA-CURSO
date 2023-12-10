@@ -15,6 +15,13 @@ public class aula14{
                     min = dist[v];//Isso atualiza o valor mínimo (min) para a distância do vértice de origem ao vértice v.
                     min_index = v;//Isso atualiza o índice do vértice com a distância mínima para v.
                 }
+            return min_index;
+        }
+        //Uma função de utilitário para imprimir a distância construída array.
+        void printSolution(int dist[]){
+            System.out.println("Vertex \t\t Distance from Source");
+            for(int i = 0; i < V; i++)
+            System.out.println(i + " \t\t " + dist[i]);
         }
     }
 
