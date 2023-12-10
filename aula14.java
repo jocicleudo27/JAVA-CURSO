@@ -34,6 +34,9 @@ public class aula14{
                 dist[i] = Integer.MAX_VALUE;//define a distância inicial do vértice de origem ao vértice i como Integer.MAX_VALUE, que é o maior valor possível para um int
                 sptSet[i] = false;//define o valor inicial de sptSet[i] como false, indicando que o vértice i ainda não foi incluído na árvore do caminho mais curto
             }
+            //A distância do vértice da fonte de si mesmo é sempre 0
+            dist[src] = 0;
+            
         }
     }
 
