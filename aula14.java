@@ -36,7 +36,21 @@ public class aula14{
             }
             //A distância do vértice da fonte de si mesmo é sempre 0
             dist[src] = 0;
-            
+            //Encontre o caminho mais curto para todos os vértices
+            //Este é um loop for que executa V - 1 vezes, onde V é o número de vértices no gráfico. O loop é usado para construir a árvore do caminho mais curto.
+            for(int count = 0; count < V -1; count++){
+                // Escolha o vértice de distância mínima do conjunto
+                //e vértices ainda não processados. u é sempre
+                //igual a src na primeira iteração.
+                int u = minDistance(dist, sptSet);
+                //Esta linha chama o método minDistance(dist, sptSet) e armazena o resultado na variável u. 
+                //O método minDistance(dist, sptSet) retorna o índice do vértice com a menor distância, 
+                //a partir do conjunto de vértices ainda não incluídos na árvore do caminho mais curto.
+                
+                //Marque o vértice escolhido como processado
+                sptSet[u] = true;// Esta linha marca o vértice u como incluído na árvore do caminho mais curto.
+
+            }
         }
     }
 
