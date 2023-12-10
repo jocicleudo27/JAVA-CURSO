@@ -49,8 +49,14 @@ public class aula14{
                 
                 //Marque o vértice escolhido como processado
                 sptSet[u] = true;// Esta linha marca o vértice u como incluído na árvore do caminho mais curto.
-
+                for(int v = 0; v < V; v++)
+                    if(!sptSet[v] && graph[u][v] != 0)//!sptSet[v]: Isso verifica se o vértice v ainda não foi incluído na árvore do caminho mais curto.
+                    && dist[u] != Integer.MAX_VALUE//graph[u][v] != 0: Isso verifica se existe uma aresta do vértice u para o vértice v. graph[u][v] representa o peso da aresta do vértice u para o vértice v.
+                    && dist[u] + graph[u][v] < dist[v])//dist[u] != Integer.MAX_VALUE: Isso verifica se a distância mínima do vértice de origem ao vértice u já foi definida.
+                    dist[v] = dist[u] = graph[u][v];//dist[v] = dist[u] + graph[u][v];: Isso atualiza a distância mínima do vértice de origem para o vértice v para ser a distância do vértice de origem para o vértice u mais o peso da aresta do vértice u para o vértice v.
             }
+            //Imprimir a matriz de distância construída
+            printSolution(dist);
         }
     }
 
