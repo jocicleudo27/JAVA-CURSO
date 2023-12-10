@@ -23,6 +23,13 @@ public class aula14{
             for(int i = 0; i < V; i++)
             System.out.println(i + " \t\t " + dist[i]);
         }
+        //Função que implementa a fonte única de Dijkstra
+        //algoritmo de caminho mais curto para um grafo representado usando representação matricial de adjacência.
+        void Dijkstra(int graph[][], int src){// Esta é a representação matricial de adjacência do gráfico.
+            //int src: Este é o vértice de origem a partir do qual o algoritmo de Dijkstra é executado.
+            int dist[] = new int[V];
+            Boolean sptSet[] = new Boolean[V];
+        }
     }
 
 }
