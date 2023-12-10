@@ -29,6 +29,11 @@ public class aula14{
             //int src: Este é o vértice de origem a partir do qual o algoritmo de Dijkstra é executado.
             int dist[] = new int[V];//cria  um novo array de inteiros chamado dist com tamanho V.
             Boolean sptSet[] = new Boolean[V];//cria um novo array de booleanos chamado sptSet com tamanho V
+            //Inicialize todas as distâncias como INFINITE e stpSet[] como false.
+            for(int i = 0; i < V; i++){
+                dist[i] = Integer.MAX_VALUE;//define a distância inicial do vértice de origem ao vértice i como Integer.MAX_VALUE, que é o maior valor possível para um int
+                sptSet[i] = false;//define o valor inicial de sptSet[i] como false, indicando que o vértice i ainda não foi incluído na árvore do caminho mais curto
+            }
         }
     }
 
