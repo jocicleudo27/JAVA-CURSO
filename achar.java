@@ -40,3 +40,4 @@ n é primo. Ela retorna true se o número for primo e false caso contrário.
 for(int i = 2; i <= Math.sqrt(n); i++): Este loop verifica 
 se n é divisível por qualquer número até a raiz quadrada de n. 
 Se n for divisível por qualquer número nesse intervalo, então n não é primo.*/
+//https://www.javatpoint.com/package

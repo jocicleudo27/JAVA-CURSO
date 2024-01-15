@@ -21,3 +21,4 @@ class Test5{
         a.d();
     }
 }
+//https://www.javatpoint.com/encapsulation
