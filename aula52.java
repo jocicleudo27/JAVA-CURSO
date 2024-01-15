@@ -10,4 +10,7 @@ class Conta{
     public void setAcc_no(long acc_no){
         this.acc_no = acc_no;
     }
+    public String getNome(){
+        return nome;
+    }
 }
