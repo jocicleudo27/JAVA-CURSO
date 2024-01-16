@@ -4,4 +4,7 @@ public final class Funcionario53{
     public Funcionario53(String pancardNumber){
         this.pancardNumber = pancardNumber;
     }
+    public String getPancardNumber(){
+        return pancardNumber;
+    }
 }
