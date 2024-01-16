@@ -1,4 +1,4 @@
-class conta{
+/*class conta{
     int cc;
     String nome;
     float saldo;
@@ -45,3 +45,4 @@ class conta{
     }
     
 }
+*/
