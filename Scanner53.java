@@ -12,8 +12,7 @@ public class Scanner53 {
 */
 
 //exemplo 2
-
-import java.util.*;
+/*import java.util.*;
 
 public class Scanner53 {
 
@@ -35,5 +34,27 @@ public class Scanner53 {
         double d = in.nextDouble();
         System.out.println("Salario: " + d);
         in.close();
+    }
+}
+*/
+
+import java.io.*;
+class Aluno implements java.io.Serializable{
+    public int id;
+    public String name;
+    public Aluno(int id, String name){
+        this.id = id;
+        this.name = name;
+    }
+}
+
+class Despersist{
+    public static void main(String[] args) {
+        try{
+            ObjectInputStream in = new ObjectInputStream(new FileInputStream("f.txt"));
+            Aluno s = (Aluno)in.readObject();
+            System.out.println(s.id+" "+s.name);
+            in.close();
+        }catch(Exception e){System.out.println(e);}
     }
 }
