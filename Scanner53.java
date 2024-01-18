@@ -37,8 +37,7 @@ public class Scanner53 {
     }
 }
 */
-
-import java.io.*;
+/*import java.io.*;
 class Aluno implements java.io.Serializable{
     public int id;
     public String name;
@@ -57,4 +56,33 @@ class Despersist{
             in.close();
         }catch(Exception e){System.out.println(e);}
     }
+}
+*/
+
+/*SAIDA DO CODIGO
+java.io.FileNotFoundException: f.txt (O sistema não pode encontrar o arquivo especificado)
+PS C:\Users\PC\OneDrive\Documentos\test\cursocplusplus\meus projetos\JAVA-CURSO> */
+
+import java.awt.*;
+
+ class AWT extends Frame {
+    AWT(){
+        Button b = new Button("Clique aqui!!");
+
+        b.setBounds(30,100,80,30);
+
+        add(b);
+
+        setSize(300, 300);
+
+        setTitle("Este é nosso exemplo básico de AWT");
+
+        setLayout(null);
+
+        setVisible(true);
+    }
+    public static void main(String[] args){
+        AWT f = new AWT();
+    }
+    
 }
