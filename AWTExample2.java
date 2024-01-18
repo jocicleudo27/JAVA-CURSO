@@ -1,7 +1,7 @@
 /**
  * AWTExample2
  */
-import java.awt.*;
+/*import java.awt.*;
 
 public class AWTExample2 {
 
@@ -30,4 +30,4 @@ public class AWTExample2 {
     public static void main(String[] args) {
         
     }
-}
+} */

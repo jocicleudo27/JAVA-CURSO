@@ -1,4 +1,4 @@
-import java.awt.*;
+/*import java.awt.*;
 import java.awt.event.*;
 
 class AEvent2 extends Frame{
@@ -25,4 +25,4 @@ class AEvent2 extends Frame{
     public static void main(String[] args) {
         new AEvent2();
     }
-}
+} */

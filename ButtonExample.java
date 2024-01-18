@@ -1,4 +1,4 @@
-import java.awt.*;
+/*import java.awt.*;
 public class ButtonExample{
     public static void main(String[] args){
         //Criar instância de quadro com o rótulo 
@@ -17,4 +17,4 @@ public class ButtonExample{
          f.setVisible(true);
          
     }
-}
+} */
