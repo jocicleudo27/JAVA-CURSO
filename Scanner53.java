@@ -62,8 +62,7 @@ class Despersist{
 /*SAIDA DO CODIGO
 java.io.FileNotFoundException: f.txt (O sistema não pode encontrar o arquivo especificado)
 PS C:\Users\PC\OneDrive\Documentos\test\cursocplusplus\meus projetos\JAVA-CURSO> */
-
-import java.awt.*;
+/*import java.awt.*;
 
  class AWT extends Frame {
     AWT(){
@@ -86,3 +85,4 @@ import java.awt.*;
     }
     
 }
+*/
