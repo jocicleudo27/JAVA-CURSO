@@ -28,6 +28,6 @@ public class AWTExample2 {
         f.setVisible(true);
     }
     public static void main(String[] args) {
-        AWTExample2 awt_obj = new AWTExample2();
+        
     }
 }
