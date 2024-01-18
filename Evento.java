@@ -1,4 +1,4 @@
-import java.awt.*;
+/*import java.awt.*;
 import java.awt.event.*;
 
 class AEvent extends Frame implements ActionListener
@@ -24,3 +24,4 @@ class AEvent extends Frame implements ActionListener
         new AEvent();
     }
 }
+*/
