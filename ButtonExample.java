@@ -1,8 +1,9 @@
-/*import java.awt.*;
+import java.awt.*;
+import javax.swing.*;
 public class ButtonExample{
     public static void main(String[] args){
         //Criar instância de quadro com o rótulo 
-        Frame f = new Frame("Exemplo de botão");
+        JFrame f = new JFrame("Exemplo de botão");
         // Criar instância de botão com rótulo 
         Button b = new Button("clique aqui");
         // Definir a posição do botão no quadro  
@@ -17,4 +18,4 @@ public class ButtonExample{
          f.setVisible(true);
          
     }
-} */
+} 

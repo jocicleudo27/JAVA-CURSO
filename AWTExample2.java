@@ -1,8 +1,7 @@
 /**
  * AWTExample2
  */
-import java.awt.*;
-import javax.swing.*;
+/*import javax.swing.*;
 
 public class AWTExample2 {
 
@@ -32,3 +31,4 @@ public class AWTExample2 {
      new AWTExample2();   
     }
 } 
+ */
