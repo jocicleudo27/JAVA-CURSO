@@ -1,18 +1,19 @@
 /**
  * AWTExample2
  */
-/*import java.awt.*;
+import java.awt.*;
+import javax.swing.*;
 
 public class AWTExample2 {
 
     AWTExample2(){
-        Frame f = new Frame();
+        JFrame f = new JFrame();
 
-        Label l = new Label("ID do funcionario:");
+        JLabel l = new JLabel("ID do funcionario:");
 
-        Button b = new Button("Enviar");
+        JButton b = new JButton("Enviar");
 
-        TextField t = new TextField();
+        JTextField t = new JTextField();
 
         
         l.setBounds(20, 50, 50, 30);
@@ -28,6 +29,6 @@ public class AWTExample2 {
         f.setVisible(true);
     }
     public static void main(String[] args) {
-        
+     new AWTExample2();   
     }
-} */
+} 
