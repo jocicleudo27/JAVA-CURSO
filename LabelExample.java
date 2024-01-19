@@ -1,5 +1,5 @@
+/*
 import javax.swing.*;
-
 
 public class LabelExample {
     public static void main(String args[]) {
@@ -26,3 +26,27 @@ public class LabelExample {
         f.setVisible(true);
     }
 }
+*/
+
+
+/*import java.awt.*;
+import java.awt.event.*;
+
+public class LabelExample extends Frame implements ActionListerner{
+    TextField tf;
+    Rótulo l;
+    Button b;
+
+    LabelExample(){
+        tf = new TextField();
+        tf = new TextField();
+        tf.setBounds(50, 50, 150, 20);
+
+        l = new Rótulo();
+        l.setBounds(50, 100, 250, 20); 
+    }
+}
+ */
+
+
+//https://www.javatpoint.com/java-awt-label
