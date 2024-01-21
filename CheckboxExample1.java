@@ -20,6 +20,11 @@ public class CheckboxExample1{
         new CheckboxExample1();
     }
 }
+/*É importante notar que a classe Frame é uma parte mais antiga da API de Java 
+para a criação de interfaces gráficas do usuário. 
+Muitos desenvolvedores preferem usar a classe JFrame do pacote javax.swing, 
+que oferece mais recursos e flexibilidade2 */
+
 /*import java.awt.*; // Importa todas as classes do pacote java.awt, que contém todas as classes para criar interfaces gráficas do usuário.
 import javax.swing.*; // Importa todas as classes do pacote javax.swing, que é uma extensão do java.awt e adiciona recursos adicionais.
 
