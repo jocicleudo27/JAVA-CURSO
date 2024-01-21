@@ -41,3 +41,4 @@ public class TextAreaexemplo2 extends JFrame implements ActionListener{
         new TextAreaexemplo2();
     }
 }
+//https://www.javatpoint.com/java-awt-checkbox
