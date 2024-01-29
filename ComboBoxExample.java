@@ -6,7 +6,7 @@ public class ComboBoxExample{
     ComboBoxExample(){
         f = new JFrame("Exemplo de ComboBox");
         String country[] = {"India", "Aus", "EUA","Inglaterra", "Nova Zelândia"};
-        JComboBox cb = new JComboBox(country);
+        JComboBox<String> cb = new JComboBox<>(country);
         cb.setBounds(50, 50, 90, 20);
         f.add(cb);
         f.setLayout(null);
