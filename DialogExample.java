@@ -1,19 +1,20 @@
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
 public class DialogExample {
-    private static Dialog d;
+    private static JDialog d;
     DialogExample() {
-        Frame f = new Frame();
-        d = new Dialog(f , "Exemplo de diálogo", true);
+        JFrame f = new JFrame();
+        d = new JDialog(f,"Exemplo de diálogo", true);
         d.setLayout( new FlowLayout() );
-        Button b = new Button ("OK");
+        JButton b = new JButton("OK");
         b.addActionListener ( new ActionListener() {
             public void actionPerformed( ActionEvent e ) {
                 DialogExample.d.setVisible(false);
             }
         });
-        d.add( new Label ("Clique no botão para continuar."));
+        d.add( new JLabel("Clique no botão para continuar."));
         d.add(b);
         d.setSize(300, 300);
         d.setVisible(true);
