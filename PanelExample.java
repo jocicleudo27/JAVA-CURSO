@@ -1,16 +1,17 @@
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
 public class PanelExample{
     PanelExample(){
-        Frame f = new Frame("Exemplo de Painel");
-        Panel panel = new Panel();
+        JFrame f = new JFrame("Exemplo de Painel");
+        JPanel panel = new JPanel();
         panel.setBounds(40, 80, 200, 200);
         panel.setBackground(Color.gray);
-        Button b1 = new Button("Botão 1");
+        JButton b1 = new JButton("Botão 1");
         b1.setBounds(50, 100, 80, 30);
         b1.setBackground(Color.yellow);
-        Button b2 = new Button("Botão 2");
+        JButton b2 = new JButton("Botão 2");
         b2.setBounds(100, 100, 80, 30);
         b2.setBackground(Color.green);
         panel.add(b1);
