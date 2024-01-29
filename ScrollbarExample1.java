@@ -1,4 +1,5 @@
-import java.awt.*;
+import javax.swing.*;
+
 import java.awt.event.*;
 
 public class ScrollbarExample1 {
@@ -7,9 +8,9 @@ public class ScrollbarExample1 {
     public ScrollbarExample1() {    
   
         // Criando um quadro  
-        Frame f = new Frame("Exemplo de barra de rolagem");
+        JFrame f = new JFrame("Exemplo de barra de rolagem");
         // Criando uma barra de rolagem  
-        Scrollbar s = new Scrollbar();
+        JScrollBar s = new JScrollBar();
   
         // Definindo a posição da barra de rolagem  
         s.setBounds (100, 100, 50, 100);
