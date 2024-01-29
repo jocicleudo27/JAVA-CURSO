@@ -8,7 +8,7 @@ Se você implementar a classe ActionListener, precisará seguir 3 etapas:
 */
 
 import javax.swing.*;
-import java.awt.*;
+
 import java.awt.event.*;
 
 public class ActionListenerExample implements ActionListener{
