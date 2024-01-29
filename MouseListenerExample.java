@@ -1,43 +1,47 @@
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-public class MouseListenerExample extends Frame implements MouseListener {
-Label l; 
-MouseListenerExample(){
-    addMouseListener(this);
 
-    l = new Label();
-    l.setBounds(20, 50, 100, 20);
-    add(l);
-    setSize(300, 300);
-    setLayout(null);
-    setVisible(true);
+public class MouseListenerExample extends JFrame implements MouseListener {
+    Label l;
 
-    this.addWindowListener(new WindowAdapter(){
-        public void windowClosing(WindowEvent we){
-            System.exit(0);
-        }
-    });
+    MouseListenerExample(){
+        l = new Label();
+        l.setBounds(20, 50, 100, 20);
+        add(l);
+        setSize(300, 300);
+        setLayout(null);
+        setVisible(true);
+
+        this.addMouseListener(this);
+
+        this.addWindowListener(new WindowAdapter(){
+            public void windowClosing(WindowEvent we){
+                System.exit(0);
+            }
+        });
+    }
+
+    public void mouseClicked(MouseEvent e){
+        l.setText("Clique com o mouse");
+    }
+    public void mouseEntered(MouseEvent e){
+        l.setText("Mouse digitado");
+    }
+    public void mouseExited(MouseEvent e){
+        l.setText("Mouse Saido");
+    }
+    public void mousePressed(MouseEvent e){
+        l.setText("Mouse pressionado");
+    }
+    public void mouseReleased(MouseEvent e){
+        l.setText("Mouse Liberado");
+    }
+    public static void main(String[] args) {
+        new MouseListenerExample();
+    }
 }
-public void mouseClicked(MouseEvent e){
-    l.setText("Clique com o mouse");
-}
-public void mouseEntered(MouseEvent e){
-    l.setText("Mouse digitado");
-}
-public void mouseExited(MouseEvent e){
-    l.setText("Mouse Saido");
-}
-public void mousePressed(MouseEvent e){
-    l.setText("Mouse pressionado");
-}
-public void mouseReleased(MouseEvent e){
-    l.setText("Mouse Liberado");
-}
-public static void main(String[] args) {
-    new MouseListenerExample();
-}
-    
-}
+
 /*Java MouseListener Interface
 O Java MouseListener é notificado sempre que você altera o estado do mouse. 
 Ele é notificado contra MouseEvent. 
