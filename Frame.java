@@ -1,8 +1,12 @@
-/*public class Frame {
+public class Frame {
+    private String str;
 
     public Frame(String string) {
-        //TODO Auto-generated constructor stub
+        this.str = string;
     }
 
+    public String getString() {
+        return str;
+    }
 }
- */
+
