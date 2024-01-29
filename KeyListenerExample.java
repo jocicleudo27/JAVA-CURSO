@@ -1,7 +1,8 @@
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class  KeyListenerExample extends Frame implements  KeyListener{
+public class KeyListenerExample extends JFrame implements KeyListener {
     Label l;
     TextArea area;
 
@@ -33,6 +34,6 @@ public class  KeyListenerExample extends Frame implements  KeyListener{
         l.setText("Tecla digitada");
     }
     public static void main(String[] args){
-        new  KeyListenerExample();
+        new KeyListenerExample();
     }
 }
