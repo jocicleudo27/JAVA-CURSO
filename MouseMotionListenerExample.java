@@ -1,7 +1,8 @@
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class MouseMotionListenerExample extends Frame implements MouseMotionListener {
+public class MouseMotionListenerExample extends JFrame implements MouseMotionListener {
     MouseMotionListenerExample(){
         addMouseMotionListener(this);
         setSize(300, 300);
@@ -25,6 +26,7 @@ public class MouseMotionListenerExample extends Frame implements MouseMotionList
         new MouseMotionListenerExample();
     }
 }
+
 
 /*public class MouseMotionListenerExample extends Frame implements MouseMotionListener {
 Esta é a declaração da classe MouseMotionListenerExample. 
