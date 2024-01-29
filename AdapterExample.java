@@ -1,11 +1,11 @@
-import java.awt.*;
+import javax.swing.*;
 import java.awt.event.*;
 
 public class AdapterExample{
-    Frame f;
+    JFrame f;
 
     AdapterExample(){
-        f = new Frame("Adaptador de Janela");
+        f = new JFrame("Adaptador de Janela");
 
         f.addWindowListener(new WindowAdapter(){
             public void windowClosing(WindowEvent e){
