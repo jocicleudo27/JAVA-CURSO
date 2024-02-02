@@ -117,7 +117,8 @@ return idx;
 }  
 // um método que troca o elemento   
 public void Swap (int m, int n)
-{  
+{
+      
 int tmp = uniqueArr[m];
 uniqueArr[m] = uniqueArr[n];
 uniqueArr[n] = tmp;
