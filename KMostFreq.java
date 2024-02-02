@@ -45,72 +45,54 @@ Map<Integer, Integer> mp;
 // método que calcula os primeiros k elementos mais frequentes da classe  
 public int[] KMostFreqEle(int s, int k, int[] inputArr)
 {  
-  
 // criando um objeto da classe HashMap  
-mp = new HashMap<>();
-  
+mp = new HashMap<>(); 
 // Construindo o mapa onde a chave é o elemento  
 // e o valor é a frequência de ocorrência desse elemento.  
 for (int e : inputArr)   
 {  
-  
 mp.put(e, mp.getOrDefault(e, 0) + 1);  
-}  
-  
+}   
 // tamanho de computação do mapa  
 int len = mp.size();  
 uniqueArr = new int[len];
 int j = 0;  
-  
 // Construindo a matriz dos elementos exclusivos.  
 for (int n : mp.keySet())
 {  
-  
 uniqueArr[j] = n;
 j = j + 1;  
 }  
-  
 // Executando o quickSel.  
 quickSel(0, len - 1, len - k);
-  
 // Retornando os elementos 'K' superiores  
 return Arrays.copyOfRange(uniqueArr, len - k, len);
-  
-}  
-  
+}   
 public void quickSel(int lft, int rght, int kSmall)
-{  
-  
+{   
 // Se houver apenas um elemnt na lista  
 if (lft == rght)   
 {  
 return;  
 }  
-  
 // criando um objeto da classe Random  
 Random rndm = new Random();
-  
 // Selecionando um índice aleatório como pivô.  
 int pvt = lft + rndm.nextInt(rght - lft);  
-  
 // Encontrar a posição do pvot na lista que é classificada.  
 pvt = partição (lft, rght, pvt);
-  
 // Se o pvt estiver localizado em sua posição final.  
 if (kSmall == pvt)   
 {  
-  
 return;  
 }  
 else if (kSmall < pvt)
 {  
-  
 // Movendo-se na direção que resta.  
 quickSel(lft, pvt - 1, kSmall);  
 }  
 else   
 {  
-  
 // Movendo-se na direção que é certa.  
 quickSel(pvt + 1, rght, kSmall);
 }  
@@ -118,32 +100,24 @@ quickSel(pvt + 1, rght, kSmall);
   
 public int partição (int lft, int rght, int pvt)
 {  
-  
 int pivotFreq = mp.get(uniqueArr[pvt]);  
-  
 // Movendo o pivô para o fim.  
 Swap(pvt, rght);
 int idx = lft;  
-  
 // Movendo todos os elementos menos frequentes   
 // para o lado esquerdo do pivô.  
 for (int j = lft; j <= rght; j++)
 {  
-  
 if (mp.get(uniqueArr[j]) < pivotFreq)
 {  
-  
 Swap(idx, j);
 idx = idx + 1;  
 }  
 }  
-  
 // Movendo o pivô para o lugar final.  
 Swap(idx, rght);  
-  
 return idx;
 }  
-  
 // um método que troca o elemento   
 public void Swap (int m, int n)
 {  
@@ -151,27 +125,22 @@ int tmp = uniqueArr[m];
 uniqueArr[m] = uniqueArr[n];
 uniqueArr[n] = tmp;
 }  
-  
 // Método principal  
 public static void main(String argvs[])
 {  
 // criando um objeto da classe KMostFreq  
 KMostFreq obj = new KMostFreq();
-  
-  
 // entrada 1  
 int inputArr[] = {5, 5, 3, 7, 9, 7, 0, 1, 2 , 7};
 int k = 2;  
-  
 int size = inputArr.length;  
-  
 int arr[] = obj.KMostFreqEle(size, k, inputArr);
-  
 System.out.println("Para a matriz de entrada: ");
 for(int i = 0 ; i < size; i++)
 {  
 System.out.print(inputArr[i] + " ");
-}  
+}
+
 System.out.println();  
 System.out.println("Os primeiros " + k + " elementos frequentes são:");
 for(int l = 0; l < arr.length; l++)
@@ -179,21 +148,18 @@ for(int l = 0; l < arr.length; l++)
 System.out.print(arr[l] + " ");
 }  
   
-System.out.println( "\n" );  
-  
+System.out.println( "\n" );    
 // entrada 2  
 int inputArr1[] = {9, 2, 0, 1, 4, 8, 6, 3, 0, 1, 5, 4, 4, 1 , 7};
 k = 3;  
-  
 size = inputArr1.length;
-  
 int arr1[] = obj.KMostFreqEle(size, k, inputArr1);
-  
 System.out.println("Para a matriz de entrada: ");
 for(int i = 0 ; i < size; i++)
 {  
 System.out.print(inputArr1[i] + " ");
-}  
+}
+  
 System.out.println();  
 System.out.println("Os primeiros " + k + " elementos frequentes são:");
 for(int l = 0; l < arr1.length; l++)
