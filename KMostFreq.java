@@ -26,10 +26,7 @@ Defina o pivô como a partição (lft, rght, pvt).
 Se 'kSml' é o mesmo que o 'pvt, então saia do método.
 Caso contrário, se 'kSml' for menor que 'pvt, chame o método quickselect() na partição esquerda. 
 Caso contrário, chame o método quickSel() na partição direita.
-
 */
-
-
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Map;
